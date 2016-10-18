@@ -35,12 +35,14 @@
                 echo "<td>" . $name . "</td>";
                 echo "<td>" . $birthday . "</td>";
                 echo "</tr>";
+          
               }
                 //close input stream
                 $result->close();
                 //close the db connection
                 $mysqli->close();
                 ?>
+                <a href="submit.html">Add a Birthday</a>
 
 
     </body>
