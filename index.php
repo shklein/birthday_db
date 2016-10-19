@@ -23,6 +23,7 @@
                     <tr>
                       <th>Name</th>
                       <th>Birthday</th>
+                      <th></th>
                     </tr>";
             //loop through the results
             while ($row =$result->fetch_array(MYSQLI_ASSOC))
@@ -34,8 +35,9 @@
                 echo  "<tr>";
                 echo "<td>" . $name . "</td>";
                 echo "<td>" . $birthday . "</td>";
+                echo "<td><button value='Delete'>Delete</button></td>";
                 echo "</tr>";
-          
+
               }
                 //close input stream
                 $result->close();
