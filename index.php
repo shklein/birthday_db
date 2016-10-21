@@ -29,13 +29,14 @@
             while ($row =$result->fetch_array(MYSQLI_ASSOC))
               {
                 //extract user name & birthday
+                $id = $row['id'];
                 $name = $row['name'];
                 $birthday = $row['birthday'];
                 //do something with data (output)
                 echo  "<tr>";
                 echo "<td>" . $name . "</td>";
                 echo "<td>" . $birthday . "</td>";
-                echo "<td><button value='Delete'>Delete</button></td>";
+                echo "<td><button value='Delete' id='" . $id . "'>Delete</button></td>";
                 echo "</tr>";
 
               }
