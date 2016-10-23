@@ -9,11 +9,11 @@
 
       //define variables
 
-      $name = mysqli_real_escape_string($mysqli, $_POST['name']);
+      $id= mysqli_real_escape_string($mysqli, $_GET['id']);
 
 
       //sql query to execute
-      $query = "DELETE FROM WHERE name = $name;
+      $query = "DELETE FROM WHERE id = $id;";
 
 
 

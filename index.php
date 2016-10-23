@@ -36,7 +36,7 @@
                 echo  "<tr>";
                 echo "<td>" . $name . "</td>";
                 echo "<td>" . $birthday . "</td>";
-                echo "<td><button value='Delete' id='" . $id . "'>Delete</button></td>";
+                echo "<td><form action='delete.php' method='post'><input type='submit' value='Delete' id='" . $id . "' /></form></td>";
                 echo "</tr>";
 
               }
