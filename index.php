@@ -33,10 +33,12 @@
                 $name = $row['name'];
                 $birthday = $row['birthday'];
                 //do something with data (output)
-                echo  "<tr>";
+                echo  "<tr id ='" . $id . "'>";
                 echo "<td>" . $name . "</td>";
                 echo "<td>" . $birthday . "</td>";
-                echo "<td><form action='delete.php' method='post'><input type='submit' value='Delete' id='" . $id . "' /></form></td>";
+                echo "<td><form id='delete' action='delete.php'>
+                <input type='hidden' name='id' value='" . $id . "' />
+                <input type='submit' value='Delete' /></form></td>";
                 echo "</tr>";
 
               }

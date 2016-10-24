@@ -9,11 +9,11 @@
 
       //define variables
 
-      $id= mysqli_real_escape_string($mysqli, $_GET['id']);
+      $id = mysqli_real_escape_string($mysqli, $_GET['id']);
 
 
       //sql query to execute
-      $query = "DELETE FROM WHERE id = $id;";
+      $query = "DELETE FROM birthdays WHERE id = $id;";
 
 
 
