@@ -24,6 +24,7 @@
                       <th>Name</th>
                       <th>Birthday</th>
                       <th></th>
+                      <th></th>
                     </tr>";
             //loop through the results
             while ($row =$result->fetch_array(MYSQLI_ASSOC))
@@ -33,12 +34,14 @@
                 $name = $row['name'];
                 $birthday = $row['birthday'];
                 //do something with data (output)
-                echo "<tr id='" . $id . "'></tr>";
-                echo "<td>" . $name . "</td>";
-                echo "<td>" . $birthday . "</td>";
+                echo "<tr id='" . $id . "'><form id='update' action='update.php'>
+                  </tr>";
+                echo "<td><input type='text' name='name' />" . $name . "</td>";
+                echo "<td><input type='date' name='birthday' />" . $birthday . "</td>";
+                echo "<td><input type='hidden' name='id' value='" . $id . "' />
+                <input type='submit' value='Update' /></td></form>";
                 echo "<td><form id='delete' action='delete.php'>
                 <input type='hidden' name='id' value='" . $id . "' />
-                <input type='submit' value='Update' /></td>
                 <input type='submit' value='Delete' /></form></td>";
                 echo "</tr>";
 

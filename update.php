@@ -15,7 +15,7 @@
 
 
       //sql query to execute
-      $query = "UPDATE birthdays SET name='" . $name . "', birthday='" . $birthday . "' WHERE id='" . $id . "';
+      $query = "UPDATE birthdays SET name='" . $name . "', birthday='" . $birthday . "' WHERE id='" . $id . "'";
 
 
 
