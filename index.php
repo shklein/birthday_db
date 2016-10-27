@@ -36,8 +36,8 @@
                 //do something with data (output)
                 echo "<tr id='" . $id . "'><form id='update' action='update.php'>
                   </tr>";
-                echo "<td><input type='text' name='name' />" . $name . "</td>";
-                echo "<td><input type='date' name='birthday' />" . $birthday . "</td>";
+                echo "<td><input type='text' name='name' id='name' />" . $name . "</td>";
+                echo "<td><input type='date' name='birthday' id='birthday' />" . $birthday . "</td>";
                 echo "<td><input type='hidden' name='id' value='" . $id . "' />
                 <input type='submit' value='Update' /></td></form>";
                 echo "<td><form id='delete' action='delete.php'>

@@ -9,8 +9,8 @@
 
       //define variables
 
-      $name = mysqli_real_escape_string($mysqli, $_POST['name']);
-      $birthday = mysqli_real_escape_string($mysqli, $_POST['birthday']);
+      $name = mysqli_real_escape_string($mysqli, $_GET['name']);
+      $birthday = mysqli_real_escape_string($mysqli, $_GET['birthday']);
       $id = mysqli_real_escape_string($mysqli, $_GET['id']);
 
 
