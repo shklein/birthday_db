@@ -18,6 +18,8 @@
             //execute the query
             $result = $mysqli->query($query);
 
+            echo "<a href='submit.html'>Add a Birthday</a>";
+
             //create table
             echo "<table class='center'>
                     <tr>
@@ -45,13 +47,16 @@
                 <input type='submit' value='Delete' /></form></td>";
                 echo "</tr>";
 
+
               }
                 //close input stream
                 $result->close();
                 //close the db connection
                 $mysqli->close();
+
+                echo "</table>";
                 ?>
-                <a href="submit.html">Add a Birthday</a>
+
 
 
     </body>
